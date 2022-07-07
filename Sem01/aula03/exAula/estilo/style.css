@@ -1,0 +1,27 @@
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  height: 200px;
+  /* width: 200px; */
+}
+#spam {
+  color: #ff7b00cc;
+}
+
+h1 {
+  text-align: center;
+  color: blueviolet;
+  font-size: 32px;
+  background-color: aquamarine;
+}
+
+ul,
+ol {
+  text-align: justify;
+}
+
+.subtitle {
+  font-size: 24px;
+}

@@ -1,0 +1,47 @@
+/* Tirar configuração inicial (default do css) */
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #42a5f5;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5px;
+  flex-wrap: wrap; /* quando chegar no máximo da tela, o conteúdo quebra para a linha de baixo */
+}
+
+/* @media (max-width: 768px) { /*modifica caso a tela seja maior do que 768px
+  body {
+    flex-direction: column;
+  }
+  .text-info {
+    font-size: 10px;
+  }
+} 
+*/
+.container {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  gap: 20px;
+}
+
+.img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  /* vertical-align: middle; /* Coloca o alinhamento da imagem mais no meio */
+}
+
+.text-info {
+  color: grey;
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}

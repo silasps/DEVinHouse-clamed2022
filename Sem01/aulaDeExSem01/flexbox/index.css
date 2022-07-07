@@ -1,0 +1,14 @@
+.container {
+  height: 300px; /* se for 100vh (view height) - altura total da página */
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row; /* Para adicionar um item abaixo do outro (row) ou acima do outro (column*/
+  justify-content: center; /* Alinhamento horizontal*/
+  align-items: center; /* Alinhamento vertical*/
+  gap: 10px; /* espaço entre os blocos */
+}
+
+.div {
+  border: 1px solid red;
+  flex: 1;
+}

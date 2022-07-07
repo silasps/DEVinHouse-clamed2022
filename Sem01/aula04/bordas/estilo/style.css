@@ -1,0 +1,40 @@
+h2 {
+  margin: 0px;
+  padding: 0px;
+  border: 20px solid red;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+div {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid red;
+  background-color: aquamarine;
+}
+
+body{
+    padding: 100px;
+    background-color: antiquewhite;
+}
+
+.card {
+  display: flex;
+  align-items: center; /* só funciona com display: flex */
+  padding: 10px;
+  background-color: #5b9eed;
+  width: 300px;
+}
+
+.imagem img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+}
+
+div.card div.info p{
+    margin: 0px;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+}
