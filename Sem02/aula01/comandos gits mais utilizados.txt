@@ -15,10 +15,10 @@ git push origin novos-arquivos (este comando envia os arquivos para o repositóri
 **Passo a passo***
 Ordem de comandos do Git
 1 - git init (para inicializar um repositório local
-2 - git add . (para adicionar a área de stayding)
-3 -git commit -m "nome do commit" (para adicionar ao repositório local
-4- git remote add origin linkDoGitHub (estabelecer uma conexão entre repositório local e o remoto)
-5- git push -u origin main (para enviar para o repositório remoto, no caso o GitHub. Não precisa do -u quando for atualizar)
+2 - git add . (para adicionar a área de staging)
+3 - git commit -m "mensagem" (para adicionar ao repositório local
+4 - git remote add origin linkDoGitHub (estabelecer uma conexão entre repositório local e o remoto)
+5 - git push -u origin main (para enviar para o repositório remoto, no caso o GitHub. Não precisa do -u quando for atualizar)
 
 -------------------------------------------
 
