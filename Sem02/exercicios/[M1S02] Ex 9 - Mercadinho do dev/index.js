@@ -1,4 +1,15 @@
-var compra, maiorQtd = 0, itemMaiorQtd = 0, open = true, qtd = 0, hort = 0, lat = 0, car = 0, pei = 0, ave = 0, array = [], itens = ["Hortifruti", "Laticícios", "Carnes", "Peixes", "Aves"];
+var compra,
+  maiorQtd = 0,
+  itemMaiorQtd = 0,
+  open = true,
+  qtd = 0,
+  hort = 0,
+  lat = 0,
+  car = 0,
+  pei = 0,
+  ave = 0,
+  array = [],
+  itens = ["Hortifruti", "Laticícios", "Carnes", "Peixes", "Aves"];
 
 while (open == true) {
   compra = parseFloat(
@@ -38,9 +49,15 @@ while (open == true) {
           itemMaiorQtd = itens[i];
         }
       }
-      window.alert(
-        `Compra finalizada. O ítem de maior quantidade nesta compra foi o ${itemMaiorQtd} com ${maiorQtd} unidades.`
-      );
+
+      //Se nenhum ítem for selecionado termina sem a msg de qtd de ítens
+      if (maiorQtd == 0) {
+        window.alert(`Você não selecionou nenhum ítem.\n\nVolte sempre.`);
+      } else {
+        window.alert(
+          `Compra finalizada. O ítem de maior quantidade nesta compra foi o ${itemMaiorQtd} com ${maiorQtd} unidade(s).\n\nVolte sempre.`
+        );
+      }
       open = false;
   }
 }
