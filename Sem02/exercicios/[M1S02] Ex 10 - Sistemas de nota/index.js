@@ -10,9 +10,7 @@ nome = window.prompt("Digite o NOME do aluno.");
 while (contador < 4) {
   nota = parseFloat(
     window.prompt(
-      `Digite a NOTA da ${
-        contador + 1
-      }ª unidade.\n\nObservações:\n\nSó serão aceitos valores entre 0 e 10.`
+      `Digite a NOTA da ${contador + 1}ª unidade.\n\nObservações:\n\nSó serão aceitos valores entre 0 e 10.`
     )
   );
 
