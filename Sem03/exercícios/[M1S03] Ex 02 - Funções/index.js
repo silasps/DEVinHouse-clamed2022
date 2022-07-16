@@ -7,7 +7,7 @@ function imprimeElementosEQtd (lista = []) {
     }
     
     function imprimeQuantidade (listaQtd) {
-        console.log(`Este array tem ${listaQtd.length} elementos.`)
+        console.log(`Este array tem ${listaQtd.lenght} elementos.`)
     }
     
     imprimeElementos(lista);
@@ -15,4 +15,4 @@ function imprimeElementosEQtd (lista = []) {
 }
 
 //Chamada da função
-imprimeElementosEQtd(["Silas", "Izabela", "Helena", "Tobias", "José"]);
+imprimeElementosEQtd(["Silas", "Izabela", "Helena", "Tobias", "José", "Teodoro"]);

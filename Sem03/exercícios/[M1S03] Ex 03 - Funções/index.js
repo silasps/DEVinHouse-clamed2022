@@ -3,36 +3,32 @@
 // ### (ex: A quantidade informada foi _____, a de valores pares foi ___, e a de valores ímpares foi __)
 
 function listaNumeros(arrayNumeros = []) {
-    
-    //Retorna qtd de pares
-    function par(numeros) {
-        var par;
-        for (const item of numeros) {
-            if (item % 2 == 0) {
-                par += 1;
-            }
-        }
-    return par;
+  var par = 0;
+  var impar = 0;
+  var invalido = 0;
+  for (const item of arrayNumeros) {
+    if (item % 2 == 0) {
+      par++;
+    } else if (item % 2 === 1) {
+      impar++;
+    } else {
+      invalido++;
     }
-
-    //Retorna a qtd de ímpares
-    function impar(numeros) {
-        var impar
-        for (const item of numeros) {
-            if (item % 2 == 1) {
-                impar += 1;
-            }
-        }
-    return impar;
-    }
-
-    // Colocar os retornos em variáveis
-    qtdPares = par(arrayNumeros);
-    qtdImpares = impar(arrayNumeros);
-
-    // Imprime na tela 
-    console.log(`A quantidade informada foi ${arrayNumeros.length}, a de valores pares foi ${qtdPares}, e a de valores ímpares foi ${qtdImpares}`);
+    // debugger
   }
+  return [par, impar, invalido];
+}
 
 //Chamada da função
-listaNumeros([1, 2, 321, 10, 51, 11]);
+var lista = [1, 2, "silas", 4, 5, 6, 7, 8, 9, 10];
+
+qtdPares = listaNumeros(lista)[0];
+qtdImpares = listaNumeros(lista)[1];
+qtdInvalidos = listaNumeros(lista)[2];
+
+// Imprime na tela
+if (qtdInvalidos != 0) {
+  window.alert(`Sua lista tem ${qtdInvalidos} dados inválidos. Sua lista de números precisa conter apenas números inteiros.`);
+} else {
+  console.log(`A quantidade informada foi de ${lista.length} números, a de valores pares foi de ${qtdPares}, e a de valores ímpares foi de ${qtdImpares}.`);
+}
