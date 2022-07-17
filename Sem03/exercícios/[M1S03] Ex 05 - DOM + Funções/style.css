@@ -1,0 +1,9 @@
+#divPrincipal {
+    display: flex;
+    flex-direction: row;
+    color: blue;
+}
+
+#divPrincipal p {
+    padding: 10px;
+}
