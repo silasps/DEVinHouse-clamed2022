@@ -4,9 +4,8 @@ function criarDiv() {
   for (let i=1; i<=5; i++) {
       divCriada.innerHTML += `Texto ${i}`;
       divPrincipal.appendChild(divCriada);
+      divCriada.style.color = 'blue';
   }
 }
 
 criarDiv();
-
-// Não consegui estilizar meus parágrafos criados
