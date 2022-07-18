@@ -1,4 +1,4 @@
-// // Codigo do Michael
+// // Codigo feito na aula de revisão
 
 // var lista = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // var listaTamanho = lista.length;
@@ -52,7 +52,11 @@ qtdInvalidos = listaNumeros(lista)[2];
 
 // Imprime na tela
 if (qtdInvalidos != 0) {
-  window.alert(`Sua lista tem ${qtdInvalidos} dados inválidos. Sua lista de números precisa conter apenas números inteiros.`);
+  window.alert(
+    `Sua lista tem ${qtdInvalidos} dados inválidos. Sua lista de números precisa conter apenas números inteiros.`
+  );
 } else {
-  console.log(`A quantidade informada foi de ${lista.length} números, a de valores pares foi de ${qtdPares}, e a de valores ímpares foi de ${qtdImpares}.`);
+  console.log(
+    `A quantidade informada foi de ${lista.length} números, a de valores pares foi de ${qtdPares}, e a de valores ímpares foi de ${qtdImpares}.`
+  );
 }
