@@ -1,0 +1,9 @@
+#textos {
+    display: flex;
+    flex-direction: row;
+    color: blue;
+}
+
+#textos p {
+    padding: 10px;
+}
