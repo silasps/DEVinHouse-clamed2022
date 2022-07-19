@@ -1,10 +1,14 @@
-const btn01 = document.getElementById('btn01')
+const btn01 = document.getElementById('btn01');
 
-btn01.addEventListener("click", function(){
-    const itemLista = document.getElementById('input');
-    var newElement = document.createElement ('li');
-    var lista = document.querySelector ('listaBrinquedos');
-    var texto = documento.createTextNode (itemLista.value);
-    newElement.appendChild(texto);
-    lista.innerHTML += (newElement);
+btn01.addEventListener("click", function() {
+    if (input.value != ''){
+    const input = document.getElementById("input");
+    const lista = document.getElementById("listaBrinquedos");
+    var novoItem = document.createElement('li');
+    lista.appendChild(novoItem);
+    novoItem.innerHTML += (input.value);
+    input.value = '';
+    } else {
+        window.alert('Insira dados no campo "input" antes de clicar no botão');
+    }
 });
