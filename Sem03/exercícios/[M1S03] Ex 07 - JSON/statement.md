@@ -3,3 +3,8 @@
 ### Analise e entenda a resposta que é entregue em formato JSON. Em seguida, explique, com suas palavras, o que entendeu a respeito.
 
 ### Dica (em ingles): https://medium.com/@YvonneFPan/using-postman-run-api-tests-1fe430bb31cf
+
+
+# Resposta
+
+A resposta entregue é bem parecida com um objeto de JavaScript.

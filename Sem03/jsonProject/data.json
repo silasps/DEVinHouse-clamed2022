@@ -1,0 +1,57 @@
+[{
+	"username": "Silasps",
+	"password": "123",
+	"profile": {
+		"first_name": "Silas",
+		"last_name": "Silva"
+	},
+	"contact": {
+		"email": ["silaspereiras@gmail.com", "silas_pereira-silva@estudante.sesisenai.org.br"],
+		"phone": ["555-5555-555", "21-2121-212"]
+	}
+}, {
+	"username": "Bela2000",
+	"password": "123",
+	"profile": {
+		"first_name": "Izabela",
+		"last_name": "Silva"
+	},
+	"contact": {
+		"email": ["izabela.cristinadance@gmail.com", "izabela.cristinadance@yahoo.com.br"],
+		"phone": ["975278653", "31 992513249"]
+	}
+}, {
+	"username": "Marta55",
+	"password": "123",
+	"profile": {
+		"first_name": "Marta",
+		"last_name": "Silva"
+	},
+	"contact": {
+		"email": ["marta.cristinadance@gmail.com", "marta.cristinadance@yahoo.com.br"],
+		"phone": ["975278653", "31 992513249"]
+	}
+}, {
+	"username": "Thiagols",
+	"password": "123",
+	"profile": {
+		"first_name": "Thiago",
+		"last_name": "Silva"
+	},
+	"contact": {
+		"email": ["Thiago.cristinadance@gmail.com", "Thiago.cristinadance@yahoo.com.br"],
+		"phone": ["975278653", "31 992513249"]
+	}
+},
+{
+	"username": "user10",
+	"password": "123",
+	"profile": {
+		"first_name": "Thiago",
+		"last_name": "Silva"
+	},
+	"contact": {
+		"email": ["Thiago.cristinadance@gmail.com", "Thiago.cristinadance@yahoo.com.br"],
+		"phone": ["975278653", "31 992513249"]
+	}
+}]
