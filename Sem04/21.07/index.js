@@ -88,55 +88,55 @@
 // Apenas retorne os objetos que possuem a idade maior ou igual a 18 anos usando o .filter
 
 
-let array = [
-    {
-      nome: "Rayane",
-      sobrenome: "Cristina",
-      idade: 21
-    },
-    {
-      nome: "Carlos",
-      sobrenome: "Henrique",
-      idade: 17
-    },
-    {
-      nome: "Julio",
-      sobrenome: "Cesar",
-      idade: 19
-    },
-    {
-      nome: "Camila",
-      sobrenome: "Fernandes",
-      idade: 18
-    },
-    {
-        nome: "Julia",
-        sobrenome: "Fernandes",
-        idade: 10
-      },
-      {
-        nome: "Bruno",
-        sobrenome: "Albuquerque",
-        idade: 31
-      },
-      {
-        nome: "Túlio",
-        sobrenome: "Bastos",
-        idade: 22
-      },
-      {
-        nome: "Cristiane",
-        sobrenome: "Maria",
-        idade: 41
-      },
-    ]
+// let array = [
+//     {
+//       nome: "Rayane",
+//       sobrenome: "Cristina",
+//       idade: 21
+//     },
+//     {
+//       nome: "Carlos",
+//       sobrenome: "Henrique",
+//       idade: 17
+//     },
+//     {
+//       nome: "Julio",
+//       sobrenome: "Cesar",
+//       idade: 19
+//     },
+//     {
+//       nome: "Camila",
+//       sobrenome: "Fernandes",
+//       idade: 18
+//     },
+//     {
+//         nome: "Julia",
+//         sobrenome: "Fernandes",
+//         idade: 10
+//       },
+//       {
+//         nome: "Bruno",
+//         sobrenome: "Albuquerque",
+//         idade: 31
+//       },
+//       {
+//         nome: "Túlio",
+//         sobrenome: "Bastos",
+//         idade: 22
+//       },
+//       {
+//         nome: "Cristiane",
+//         sobrenome: "Maria",
+//         idade: 41
+//       },
+//     ]
 
 // Minha solucao
-const maioridade = array.filter(function (maior18){
-    return maior18.idade >= 18;
+// const maioridade = array.filter(function (maior18){
+//     return maior18.idade >= 18;
     
-});
-console.log(maioridade);
+// });
+// console.log(maioridade);
 
 // Solucao Professora
 
@@ -159,11 +159,11 @@ console.log(maioridade);
 
 // Usando o array retornado após o .filter do ultimo exercicio, imprima em uma tag h1 qual o nome e sobrenome da primeira pessoa que possua idade maior que 30 anos.
 
-let maiorQueTrinta = maioridade.find(function (item){
-    return item.idade > 30;
-});
+// let maiorQueTrinta = maioridade.find(function (item){
+//     return item.idade > 30;
+// });
 
-document.write(`<h1>${maiorQueTrinta.nome}, ${maiorQueTrinta.sobrenome}</h1>`);
+// document.write(`<h1>${maiorQueTrinta.nome}, ${maiorQueTrinta.sobrenome}</h1>`);
 
 
 // =================================================================//
@@ -171,11 +171,11 @@ document.write(`<h1>${maiorQueTrinta.nome}, ${maiorQueTrinta.sobrenome}</h1>`);
 // MAP: acessa cada elemento e faz uma ação
 
 // Trocar o sobrenome de todas as pessoas no array de objetos acima
-let array2 = array.map(function (item){
-    item.sobrenome = " Silva";
-});
+// let array2 = array.map(function (item){
+//     item.sobrenome = " Silva";
+// });
 
-console.log(array);
+// console.log(array);
 
 // Exercício em sala - Enviar no Slack
 
@@ -207,6 +207,59 @@ console.log(array);
 
 // SORT: Ordena os elementos do proprio array e retorna o array. A ordenacao segue o padrao da pontuacao de codigo unicode
 
-const numeros = [4, 1, 2, 3];
-const ordenado = numeros.sort((a, b) => a - b); //a - numero atual, b - proximo numero
-console.log(ordenado);
+// const numeros = [4, 1, 2, 3];
+// const ordenado = numeros.sort((a, b) => a - b); //a - numero atual, b - proximo numero
+// console.log(ordenado);
+
+// ========================================================= //
+
+// REDUCE:
+
+// const array = [1, 2, 3, 4];
+// const valorInicial = 0;
+// const soma = array.reduce(
+//   function (valorAnterior, valorAtual){
+//   debugger;
+//   return valorAnterior + valorAtual;
+//   },
+//   valorInicial
+// );
+// // 0 + 1 + 2 + 3 + 4
+// console.log(soma);//10
+
+// ------------------------------------------------------
+
+// Exercício em sala - Slide 17 - REDUCE
+
+// Observando o array abaixo e usando o reduce, encontre qual é o item que possui o maior valor.
+
+// Dica: se o item atual for maior que o valor anterior, o valor anterior irá passar a ser o item atual.
+
+
+// let maiorValor = array.reduce(function (){}, /*valor inicial*/ valorInicial)
+
+const array = [1, 22, 31, 40, 3, 5];
+const valorInicial = 0;
+const maiorValor = array.reduce(function (valorAnterior, valorAtual){
+    debugger;
+    if (valorAtual>valorAnterior){
+        valorAnterior = valorAtual;
+        console.log(array.indexOf(valorAnterior).value);
+    }
+    debugger;
+  return valorAnterior;
+  },
+valorInicial
+);
+
+console.log(maiorValor);
+
+
+// // =================
+// foreach 8
+
+// series.forEach(function(item,i){
+//   if (series[i].anoLancamento <serieMaisAntiga){
+//     serieMaisAntiga = item.anoLancamento
+//   }
+// });
