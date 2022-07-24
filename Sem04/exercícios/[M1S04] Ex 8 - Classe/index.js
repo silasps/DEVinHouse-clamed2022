@@ -18,8 +18,8 @@ class Serie{
 }
 let anoMaisAntiga, nomeAntigo;
 
-for(let i = 0; i < 4; i++){
-    let nome = window.prompt("Digite o nome da série.");
+for(let i = 0; i < 2; i++){
+    let nome = window.prompt(`Digite o nome da ${i+1}ª série.`);
     let anolancamento = parseInt(window.prompt("Digite o ano de lançamento da série."));
     let qttTemporada = parseInt(window.prompt("Digite a quantidade de temporadas da série."));
 
@@ -28,6 +28,7 @@ for(let i = 0; i < 4; i++){
 
     if(i == 0){ // Na primeira rodada o valor do primeiro lançamento é inserido
         anoMaisAntiga = serie.anolancamento;
+        nomeAntigo = serie.nome;
     } else if(serie.anolancamento < anoMaisAntiga){
         anoMaisAntiga = serie.anoLancamento;
         nomeAntigo = serie.nome;

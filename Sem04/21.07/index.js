@@ -58,7 +58,7 @@
 
 // A cada item deverá ser verificado se o primeiro caractere é B, caso seja, adicione toda a string do item em um outro array.
 
-
+//------------------------------------------------
 // novoArray = [];
 // var names = ["Ben","Carol", "Iane", "Jafar", "Matt", "Priya", "Brian", "Guilherme", "Bruna"];
 

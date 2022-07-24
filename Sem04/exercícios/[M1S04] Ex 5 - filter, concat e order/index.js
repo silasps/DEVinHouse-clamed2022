@@ -20,10 +20,10 @@ console.log(arrayConcatenado);
 const arraySemRepetidos = arrayConcatenado.filter(function(elemento, posicao){
     return arrayConcatenado.indexOf(elemento) == posicao;
 });
-console.log(arraySemRepetidos);
 
 // Utilizando new Set
-// var semRepetidos = [new Set(arrayConcatenado)]
+// const arraySemRepetidos = [new Set(arrayConcatenado)]
+console.log(arraySemRepetidos);
 
 // #Ordenar crescente
 const arrayOrdenado = arraySemRepetidos.sort();
