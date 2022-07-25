@@ -1,9 +1,13 @@
-### Crie um código javascript que irá juntar os dois arrays abaixo e coloque esse array concatenado em outra variável:
+### Dado o array de cidades abaixo, filtre apenas as cidades com mais de 200000 habitantes;
 
+    let cidades = [
+        { nome: 'Patos de Minas', populacao: 153585 },
+        { nome: 'Lages', populacao: 157349 },
+        { nome: 'Ibiúna', populacao: 79479 },
+        { nome: 'Maringá', populacao: 403063 },
+        { nome: 'Curitiba', populacao: 1963726 },
+        { nome: 'Florianópolis', populacao: 508826 },
+        { nome: 'Pato Branco', populacao: 84779 },
+    ];
 
-    let array1 = [1,3,4,5,3,7];
-    let array2 = [1,2,6,4,8,5];
-
-
- - Após fazer a junção remova os itens que se repetem usando o .includes ou o .filter
- - Após isso ordene por ordem crescente.
+### _Dica: Dar uma olhada no método filter
