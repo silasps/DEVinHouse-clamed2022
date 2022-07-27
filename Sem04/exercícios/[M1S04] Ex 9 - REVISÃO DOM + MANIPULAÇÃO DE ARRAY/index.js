@@ -88,4 +88,19 @@ arrayMusicas.forEach(function(item){
 
 // Sua missão será ao clicar em algum desses nomes imprimir ou em tela toda a informação referente ao item selecionado
 
-// Não consegui ainda
+// var body = document.querySelector("body")
+// arrayMusicas.forEach(function(nome){
+//     var texto1 = document.createTextNode(nome.banda)
+//     var texto2 = document.createTextNode(nome.anoDeLancamento)
+//     const detalhe = document.createElement("details")
+//     const detalhes = body.appendChild (detalhe)
+//     const tituloDetalhe = document.createElement ("summary")
+//     tituloDetalhe.innerHTML = nome.nome
+//     const paragrafo1 = document.createElement("li")
+//     const paragrafo2 = document.createElement("li")
+//     detalhes.appendChild(tituloDetalhe)
+//     detalhes.appendChild(paragrafo1)
+//     detalhes.appendChild(paragrafo2)
+//     paragrafo1.appendChild(texto1)
+//     paragrafo2.appendChild(texto2)
+// })
