@@ -29,8 +29,8 @@ const numerosPositivos = array => {
         if (item >= 0) {
             arrayPositivos.push(item);
         };
-        return arrayPositivos;
     }
+    return arrayPositivos;
 }
 
-numerosPositivos(array)
+console.log(numerosPositivos(array));
