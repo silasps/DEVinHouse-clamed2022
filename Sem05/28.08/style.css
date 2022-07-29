@@ -1,0 +1,13 @@
+input {
+    display: flex;
+    flex-direction: column;
+}
+
+#div {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 200px;
+}
