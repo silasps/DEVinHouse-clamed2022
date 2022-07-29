@@ -8,46 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-    <!-- <body>
-        <h1>Cadastro do Usuário </h1>
-        <div id = recebeValores>
-            <p>Nome</p>
-            <input type="text" id="inserirNome" placeholder="Informe aqui seu Nome">
-            <p>Imagem</p>
-            <input type="text" id="inserirImagem" placeholder="Insira aqui o link da sua Imagem">
-            <p>Descrição</p>
-            <input type="text" id="inserirDescrição" placeholder="Insira sua Descrição">
-            <button id="botaoSubmeter">Criar Usuário</button>
-        </div>
-    <div id = cartão>
-                <div id = imagemCard></div>
-            <h2 id = nomeCard></h2>
-            <p id = descricaoCard></p>
-            <img id = imagemCard2 src="" alt="">  
-        </div>
-        
-        <script src = "cadastroCardUsuario.js"></script>
-        <script src = "./cardEnviar.js"></script>
-        <script src = "./cardReceber.js"></script>
-    </body> -->
-
-
-
-    <div id="bloco1">
+    <form id="receber-dados">
         <h1>Cadastro de usuário</h1>
-        Nome: <input type="text" id="input1">
-        Link de imagem: <input type="text" id="input2">
-        Descrição <input type="text" id="input3">
-
-        <button id="btn1">CRIAR USUÁRIO</button>
+        Nome: <input type="text" id="input-nome" placeholder="Insira seu nome">
+        Link de imagem: <input type="text" id="input-imagem" placeholder="Insira o link de uma foto">
+        Descrição <input type="text" id="input-descricao" placeholder="Faça uma breve descrição sobre você">
+        <br>
+        <button id="botao-criar" type="submit">CRIAR USUÁRIO</button>
+    </form>
+    <div id="imprimir-dados">
+        <img id="apresenta-imagem" src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png">
+        <h2 id="apresenta-nome">Usuário</h2>
+        <p id="apresenta-descricao">Descrição.</p>
     </div>
-    <div id="bloco2">
-        <img id="imagem" src="" alt="Foto usuario">
-
-    </div>
-</div>
 </body>
-<script src="receberDados.js" type="module"></script>
 <script src="imprimirDados.js" type="module"></script>
+<script src="receberDados.js" type="module"></script>
 </html>
+
+
+
+
+
+
+
+        <!-- <body>
+            <h1>Cadastro do Usuário </h1>
+            <div id = recebeValores>
+                <p>Nome</p>
+                <input type="text" id="inserirNome" placeholder="Informe aqui seu Nome">
+                <p>Imagem</p>
+                <input type="text" id="inserirImagem" placeholder="Insira aqui o link da sua Imagem">
+                <p>Descrição</p>
+                <input type="text" id="inserirDescrição" placeholder="Insira sua Descrição">
+                <button id="botaoSubmeter">Criar Usuário</button>
+            </div>
+        <div id = cartão>
+                    <div id = imagemCard></div>
+                <h2 id = nomeCard></h2>
+                <p id = descricaoCard></p>
+                <img id = imagemCard2 src="" alt="">  
+            </div>
+            
+            <script src = "cadastroCardUsuario.js"></script>
+            <script src = "./cardEnviar.js"></script>
+            <script src = "./cardReceber.js"></script>
+        </body> -->

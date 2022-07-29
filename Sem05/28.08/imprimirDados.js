@@ -1,15 +1,70 @@
 // Crie uma aplicação com três inputs que receba um nome, link de imagem e descrição de um usuário. 
 // Fazendo uso de módulos nativos do JS, exiba os valores recebidos em um card de usuário.
 
-const receberDados = require('./receberDados')
+// Acessar elementos
+var apresentaImagem = document.getElementById('apresenta-imagem');
+var apresentaNome = document.getElementById('apresenta-nome');
+var apresentaDescricao = document.getElementById('apresenta-descricao');
 
-receberDados (nome, imagem, descricao) {
-var criarH1 = document.createElement('h1');
-nome.appendChild(criarH1);
-criarH1.innerHTML(nome.value);
+export default function imprimirDados (nome, link, descricao) {
+    // imprimir os elementos
+    if (link) {
+        apresentaImagem.setAttribute("src",link);
+    }
+    if (nome) {
+        apresentaNome.innerHTML = nome;
+    }
+    if (descricao) {
+        apresentaDescricao.innerHTML = descricao;
+    }
 }
 
-document.getElementById('id').innerHTML = nome
+// Exportar dentro de um objeto
+// export {receberDados}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// imprimirDados () {
+// var criarH1 = document.createElement('h1');
+// nome.appendChild(criarH1);
+// criarH1.innerHTML(nome.value);
+// }
+
+// document.getElementById('id').innerHTML = nome
+
+// module.exports = imprimirDados;
+
+// // =======================================
+// tn01.addEventListener("click", function() {
+//     if (input.value != ''){
+//     const input = document.getElementById("input");
+//     const lista = document.getElementById("listaBrinquedos");
+//     var novoItem = document.createElement('li');
+//     lista.appendChild(novoItem);
+//     novoItem.innerHTML += (input.value);
+//     input.value = '';
+//     } else {
+//         window.alert('Insira dados no campo "input" antes de clicar no botão');
+//     }
+// });
 
 // primeiro js
 // //DOM
