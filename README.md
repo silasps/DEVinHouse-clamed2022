@@ -6,6 +6,9 @@
 
 Curso de 9 meses subsidiado pela empresa CLAMED Farmácias em parceria com o Senai que desenvolveu o projeto DEVinHouse focado em desenvoler e preparar desenvolvedores fullstack para o mercado de trabalho.
 
+## :white_check_mark: Técnicas e tecnologias utilizadas
+
+
 ## O curso apresenta a seguinte grade curricular:
 
 ### Módulo 1
