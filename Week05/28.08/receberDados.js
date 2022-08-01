@@ -29,3 +29,17 @@ botao.addEventListener('click', (event) => {
 
     formulario.reset()
 });
+
+
+// funcao reaproveitavel para criar elemento
+// function gerarTexto(minhaArray, minhaId, meuElemento){
+//     var divget = document.getElementById(minhaId)
+//     for(element of minhaArray){
+//     let p = document.createElement('meuElemento);
+//     p.innerHTML  = minhaArray;
+//     divget.appendChild(p);
+//     }
+// }
+// gerarTexto(minhaArray, "minha-div", "li")
+
+// https://discord.gg/zMKUskgM
