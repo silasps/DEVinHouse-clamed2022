@@ -1,8 +1,10 @@
 <h1 align="center"> DEVinHouse - SENAI LAB365 </h1>
 
-[Curso DEVinHouse - CLAMED - SENAI LAB365]()
+<p align="center">
+<img src="https://user-images.githubusercontent.com/77552461/182161474-ace9f1dc-228a-4d84-9db5-3ecf61137c97.png">
+</p>
 
-Curso de 9 meses subsidiado pela empresa CLAMED Farmácias em parceria com o Senai com o projeto DEVinHouse focado em desenvoler e preparar desenvolvedores fullstack para o mercado de trabalho.
+Curso de 9 meses subsidiado pela empresa CLAMED Farmácias em parceria com o Senai que desenvolveu o projeto DEVinHouse focado em desenvoler e preparar desenvolvedores fullstack para o mercado de trabalho.
 
 ## O curso apresenta a seguinte grade curricular:
 
