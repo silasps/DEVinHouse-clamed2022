@@ -8,6 +8,24 @@ Curso de 9 meses subsidiado pela empresa CLAMED Farmácias em parceria com o Sen
 
 ## :white_check_mark: Técnicas e tecnologias utilizadas
 
+* HTML 5
+* CSS 3
+* JavaScript
+* NodeJS
+* ES6+
+* React
+* Scrum
+* Java
+* Spring
+* SQL
+* Spring + SQL
+* Java + Spring
+* Spring Security
+* DevOps
+* Virtualização - Containers e Docker
+* Boas práticas para documentação do projeto
+* Linux
+
 
 ## O curso apresenta a seguinte grade curricular:
 
@@ -40,4 +58,51 @@ Curso de 9 meses subsidiado pela empresa CLAMED Farmácias em parceria com o Sen
 ### Módulo 2
 
 * Scrum
-    * 
+    * Metodologias Ágeis: Scrum (papéis, artefatos e rotinas)
+
+* Java
+   * Introdução ao Java (instalação, sintaxe básica, compilação e execução)
+   * Estruturas de Controle de Fluxo (condicional, repetição), Arrays e ArrayList, Documentação de Código
+   * Revisão dos conceitos de POO: classes, objetos, métodos, atributos, construtores
+   * Modificadores (private, public, static, final), encapsulamento e sobrecarga
+   * Herança e Polimorfismo (extends, implements, protected, sobrescrita) e Tratamento de Exceções
+
+* Spring
+   * Java Servlets, Introdução ao Spring Boot, Spring Core (injeção de dependências)
+
+* SQL
+   * Instalação e configuração do ambiente PostgreSQL, overview da ferramenta e comandos DDL (CREATE, ALTER, DROP)
+   * Apresentação de modelo relacional e comandos DML (INSERT, UPDATE, DELETE, SELECT)
+
+* Spring + SQL
+   * Spring Data, Hibernate ou Jooq
+
+* Spring
+   * CRUD REST API: GET, POST, PUT, DELETE
+   * Deploy, Logging e Debug
+
+## Módulo 3
+
+* Java + Spring
+   * TDD e teste unitários (Junit)
+
+* Spring
+   * Spring Security (autenticação, JWT)
+   * Spring Security (autenticação, JWT)
+
+* DevOps
+   * Overview Cloud, Escalabilidade e CI/CD utilizando Microsoft Azure
+
+* Virtualização
+   * Containers e Docker
+
+* React
+   * TDD e Teste unitários (Jest e RTL)
+   * Material UI
+
+* Documentação
+   * Introdução, boas práticas e aplicação do Swagger no back-end
+
+* Linux
+   * Introdução ao Linux
+   * Terminal: O que é, tipos, diferenças e principais comandos (linux)
