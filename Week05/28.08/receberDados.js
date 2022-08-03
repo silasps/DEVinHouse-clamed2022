@@ -13,7 +13,7 @@ var formulario = document.getElementById('receber-dados');
 
 // Acao do botao
 botao.addEventListener('click', (event) => {
-    // console.log(event);
+    // Esta acao nao permite recarregar a pagina
     event.preventDefault();
     // Colocar os dados acessados em variaveis
     var valorDoNome = inputNome.value;
