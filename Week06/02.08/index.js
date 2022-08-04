@@ -67,5 +67,76 @@
 //     (err)=>{console.error(err)}
 //   );
   
+
+
 // =========== Async/await =======//
 
+// ========== PROMISE ASYNC E AWAIT ============= //
+
+// function validaCep() {
+//     let cep = "1234567890"
+//     const p = new Promise((resolve, reject) => {
+//         console.log(cep.length)
+//         if(cep.length == 9){
+//             resolve("Cep validado com sucesso"); // se entrar no resolve e direcionado para o then
+//         } else {
+//             reject('O cep informado esta invalido'); // se entrar no reject e direcionado para o catch
+//         }
+//     })
+
+//     p.then((resolve)=>{
+//         console.log(resolve);
+//     }).catch(
+//         (err)=>{console.error(err)}
+//     );
+
+//     //o resto do codigo
+// }
+// validaCep();
+
+// const promessa = new Promise((resolve, reject) => {
+//     fetch('.file.json')
+//     .then((response)=>{
+//         console.log(response);
+//         resolve(response.json())});
+// })
+// console.log(promessa);
+
+// promessa.then((resolve)=>{
+//     console.log(resolve);
+// }).catch(
+//     (err)=>{console.error(err)}
+// )
+
+
+// ========= ASYNC E AWAIT ========= //
+
+// async function validade(username, password){
+//     await setTimeout(() => {
+//         if(username == 'rayane123' && password == '123456'){
+//             return "Success";
+//         } else {
+//             return "Failed";
+//         }        
+//     }, 5000);
+// }
+
+// function loadPlaylist(){
+//     //
+// }
+
+// function login(){ //antes de seguir com o codigo, espera a validacao
+//     let username = 'Silas', password = '123456';
+//     let validateResults = validade(username, password);
+//     console.log(validateResults);
+//     if(validateResults == 'Success'){
+//         console.log('Logado');
+//         loadPlaylist();
+//     } else{
+//         console.error('Usuario ou senha incorreta')
+//     }
+// }
+
+// login();
+
+// ====
