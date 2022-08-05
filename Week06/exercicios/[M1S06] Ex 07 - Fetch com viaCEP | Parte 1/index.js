@@ -14,7 +14,7 @@
 
 var botao = document.getElementById('btn');
 
-botao.addEventListener('click', async () => {
+botao.addEventListener('click', () => {
     var info = document.getElementById('info');
     var input = document.getElementById('cep-entrada').value;
     info.innerHTML = "";
@@ -25,7 +25,7 @@ botao.addEventListener('click', async () => {
         header: {'contentType': 'application/json'},
     }
     
-    await fetch(`https://viacep.com.br/ws/${input}/json/`, options)
+    fetch(`https://viacep.com.br/ws/${input}/json/`, options)
     .then((response)=>{
         return response.json(); // o .json() transforma a requisicao em JSON
     }).then((response)=>{ // o segundo .then e para trazer o response em formato de json
