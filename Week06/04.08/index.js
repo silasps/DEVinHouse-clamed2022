@@ -100,10 +100,8 @@ botao.addEventListener('click', () => {
     .then((response)=>{
         return response.json(); // o .json() transforma a requisicao em JSON
     }).then((response)=>{ // o segundo .then e para trazer o response em formato de json
-        body.setAttribute("src", response.image_link);
-        body.innerHTML += `<br><br>Bairro: ${response.image_link}`;
-        body.innerHTML += `<br>Logradouro: ${response.logradouro}`;
-        body.innerHTML += `<br>Localidade: ${response.localidade}`;
+        console.log(response)
+        imagem.setAttribute("src", response.image_link);
     }).catch((err)=>{
         console.error(err)
     });
