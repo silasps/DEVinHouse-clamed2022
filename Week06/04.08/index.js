@@ -84,13 +84,12 @@
 
 
 var botao = document.getElementById('btn');
-var body = document.getElementById('body');
+var main = document.getElementById('main');
 var imagem = document.getElementById('imagem');
 //imprimirImagem.setAttribute("src",imagem);
 
 botao.addEventListener('click', () => {
-    // var input = documet.getElementById('animal-entrada');
-    // Fetch
+    main.innerHTML = "";
     const options = {
         method: "GET",
         header: {'contentType': 'application/json'},
@@ -102,6 +101,10 @@ botao.addEventListener('click', () => {
     }).then((response)=>{ // o segundo .then e para trazer o response em formato de json
         console.log(response)
         imagem.setAttribute("src", response.image_link);
+        main.innerHTML += `<br>Nome: ${response.name}`;
+        main.innerHTML += `<br>Se alimenta de: ${response.diet}`;
+        main.innerHTML += `<br>Habitat: ${response.habitat}`;
+        main.innerHTML += `<br>Encontrado em: ${response.geo_range}`;
     }).catch((err)=>{
         console.error(err)
     });
