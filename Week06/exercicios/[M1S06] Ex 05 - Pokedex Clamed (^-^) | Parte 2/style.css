@@ -31,6 +31,16 @@ main div.poke-content{
     position: relative;
 }
 
+#info {
+  text-align: center;
+  align-items: center;
+}
+
+#main-img {
+  text-align: center;
+  align-items: center;
+}
+
 main div.info{
     display: block !important;
     text-align: center;
