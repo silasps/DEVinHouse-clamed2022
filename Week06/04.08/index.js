@@ -10,27 +10,101 @@
 // ============================================== //
 
 // ==== Acessar botao ==== //
+// var botao = document.getElementById('btn');
+// var body = document.getElementById('body');
+
+// botao.addEventListener('click', () => {
+//     var input = document.getElementById('cep-entrada').value;
+//     console.log(input)
+
+//     const = new XMLHttpRequest(); // Criar uma requisicao - Este comando dever ser primeiro
+    
+//     onload = () => {
+//         // console.log(response.weight); // para imprimir um item direto
+//         console.log(response);
+//         body.innerHTML += `<br><br>Bairro: ${response.bairro}`;
+//         body.innerHTML += `<br>Logradouro: ${response.logradouro}`;
+//         body.innerHTML += `<br>Localidade: ${response.localidade}`;
+//     }
+    
+//     open("GET", `https://viacep.com.br/ws/${input}/json/`);
+//     responseType = "json";
+    
+//     send(); // Este comando deve ser por ultimo
+
+
+// });
+
+// ============ FETCH =========== //
+
+// ====== Estrutura ========= //
+// fetch(url, options)
+// .then(function () {
+//     // Seu codigo para lidar com os dados que voce obtem da API
+// })
+// .catch(funcao()) {
+//     // Aqui e onde voce executa o codigo se o servidor retornar algum erro
+// }
+// ====================================== //
+
+
+// ======= Exercicio do CEP com Fetch ========= //
+
+// var botao = document.getElementById('btn');
+// var body = document.getElementById('body');
+
+// botao.addEventListener('click', () => {
+//     var input = document.getElementById('cep-entrada').value;
+    
+//     // Fetch
+//     const options = {
+//         method: "GET",
+//         header: {'contentType': 'application/json'},
+//     }
+    
+//     fetch(`https://viacep.com.br/ws/${input}/json/`, options)
+//     .then((response)=>{
+//         return response.json(); // o .json() transforma a requisicao em JSON
+//     }).then((response)=>{ // o segundo .then e para trazer o response em formato de json
+//         body.innerHTML += `<br><br>Bairro: ${response.bairro}`;
+//         body.innerHTML += `<br>Logradouro: ${response.logradouro}`;
+//         body.innerHTML += `<br>Localidade: ${response.localidade}`;
+//     }).catch((err)=>{
+//         console.error(err)
+//     });
+// })
+
+// ======= Exercicio do ZOO ANIMAL com Fetch ========= //
+
+// Vamos utilizar a api zoo Animal para fazer um mini relatório sobre animais. O fluxo da aplicação consiste em ao carregar a tela ele deve trazer a imagem, o nome, o peso mínimo e o habitat de um animal aleatório.
+// Observações:
+// A chamada GET deverá ser feita para a url https://zoo-animal-api.herokuapp.com/animals/rand 
+// Para carregar a imagem obtenha a tag html img e no seu atributo src defina que ele será igual a propriedade image_link do objeto vindo do backend.
+// O nome será a propriedade name, o peso mínimo será weight_max e o habitat é o habitat
+
+
 var botao = document.getElementById('btn');
 var body = document.getElementById('body');
+var imagem = document.getElementById('imagem');
+//imprimirImagem.setAttribute("src",imagem);
 
 botao.addEventListener('click', () => {
-    var input = document.getElementById('cep-entrada').value;
-    console.log(input)
-
-    const OReq = new XMLHttpRequest(); // Criar uma requisicao - Este comando dever ser primeiro
-    
-    OReq.onload = () => {
-        // console.log(OReq.response.weight); // para imprimir um item direto
-        console.log(OReq.response);
-        body.innerHTML += `<br><br>Bairro: ${OReq.response.bairro}`;
-        body.innerHTML += `<br>Logradouro: ${OReq.response.logradouro}`;
-        body.innerHTML += `<br>Localidade: ${OReq.response.localidade}`;
+    // var input = documet.getElementById('animal-entrada');
+    // Fetch
+    const options = {
+        method: "GET",
+        header: {'contentType': 'application/json'},
     }
     
-    OReq.open("GET", `https://viacep.com.br/ws/${input}/json/`);
-    OReq.responseType = "json";
-    
-    OReq.send(); // Este comando deve ser por ultimo
-
-
-});
+    fetch(`https://zoo-animal-api.herokuapp.com/animals/rand`, options)
+    .then((response)=>{
+        return response.json(); // o .json() transforma a requisicao em JSON
+    }).then((response)=>{ // o segundo .then e para trazer o response em formato de json
+        body.setAttribute("src", response.image_link);
+        body.innerHTML += `<br><br>Bairro: ${response.image_link}`;
+        body.innerHTML += `<br>Logradouro: ${response.logradouro}`;
+        body.innerHTML += `<br>Localidade: ${response.localidade}`;
+    }).catch((err)=>{
+        console.error(err)
+    });
+})
