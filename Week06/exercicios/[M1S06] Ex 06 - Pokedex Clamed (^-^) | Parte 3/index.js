@@ -11,3 +11,52 @@
 // - No span com o id weight irá ser apresentado o peso do pokemon.
 // - Ao clicar no botão com a classe button será iniciado toda a funcionalidade da aplicação: pesquisa da api, adição das informações nos campos…
 
+var botao = document.querySelector(".button");
+
+botao.addEventListener("click", () => {
+
+    const options = {
+        method: "GET",
+    };
+    
+    let pokemon = document.querySelector(".input__search").value;
+
+    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`, options)
+    
+    .then((response) => {
+        return response.json();
+})
+.then((pokemon) => {
+
+    console.log(pokemon);
+
+    let image = document.querySelector(".pokemonimage");
+    let idPokemon = document.querySelector(".pokemonnumber");
+    let namePokemon = documento.querySelector(".pkemonname");
+    let typePokemon = documento.querySelector("#pkemontype");
+    let weightPokemon = documento.querySelector("#weight");
+    let abilityPokemon = documento.querySelector("#ability");
+
+
+    image.src = pokemon.sprites.front_default;
+    idPokemon.innerHTML = pokemon.id;
+    namePokemon.innerHTML = pokemon.id;
+    namePokemon.innerHTML = pokemon.name;
+    typePokemon.innerHTML = pokemon.types[0].type.name;
+    weightPokemon.innerHTML = pokemon.weight;
+
+
+    abilityPokemon.innerHTML = '';
+    pokemon.abilities.forEach(item => {
+        let tagLi = document.createElement('li');
+        tagLi.innerHTML = item.ability[0].name;
+        abilityPokemon.appendChild(tagLi)
+    });
+
+    console.log(image)
+})
+.catch((err) => {
+    console.error(err);
+});
+
+});
