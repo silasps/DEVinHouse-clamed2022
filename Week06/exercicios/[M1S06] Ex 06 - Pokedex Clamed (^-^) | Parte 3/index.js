@@ -14,7 +14,6 @@
 var botao = document.querySelector(".button");
 
 botao.addEventListener("click", () => {
-
     const options = {
         method: "GET",
     };
@@ -25,38 +24,37 @@ botao.addEventListener("click", () => {
     
     .then((response) => {
         return response.json();
-})
-.then((pokemon) => {
+    })
+    .then((pokemon) => {
 
-    console.log(pokemon);
+        console.log(pokemon);
 
-    let image = document.querySelector(".pokemonimage");
-    let idPokemon = document.querySelector(".pokemonnumber");
-    let namePokemon = documento.querySelector(".pkemonname");
-    let typePokemon = documento.querySelector("#pkemontype");
-    let weightPokemon = documento.querySelector("#weight");
-    let abilityPokemon = documento.querySelector("#ability");
+        let image = document.querySelector(".pokemonimage");
+        let idPokemon = document.querySelector(".pokemonnumber");
+        let namePokemon = document.querySelector(".pokemonname");
+        let typePokemon = document.querySelector("#pokemontype");
+        let weightPokemon = document.querySelector("#weight");
+        let abilityPokemon = document.querySelector("#ability");
 
-
-    image.src = pokemon.sprites.front_default;
-    idPokemon.innerHTML = pokemon.id;
-    namePokemon.innerHTML = pokemon.id;
-    namePokemon.innerHTML = pokemon.name;
-    typePokemon.innerHTML = pokemon.types[0].type.name;
-    weightPokemon.innerHTML = pokemon.weight;
+        image.setAttribute('src', pokemon.sprites.front_default);
+        idPokemon.innerHTML = pokemon.id;
+        namePokemon.innerHTML = pokemon.name;
+        typePokemon.innerHTML = pokemon.types[0].type.name;
+        weightPokemon.innerHTML = pokemon.weight;
 
 
-    abilityPokemon.innerHTML = '';
-    pokemon.abilities.forEach(item => {
-        let tagLi = document.createElement('li');
-        tagLi.innerHTML = item.ability[0].name;
-        abilityPokemon.appendChild(tagLi)
+        abilityPokemon.innerHTML = '';
+        pokemon.abilities.forEach(item => {
+            let tagLi = document.createElement('li');
+            tagLi.innerHTML = item.ability.name;
+            abilityPokemon.appendChild(tagLi)
+        });
+
+        console.log(image)
+    })
+    .catch((err) => {
+        window.alert('Pokemon inexistente.')
+        console.error(err);
     });
-
-    console.log(image)
-})
-.catch((err) => {
-    console.error(err);
-});
 
 });

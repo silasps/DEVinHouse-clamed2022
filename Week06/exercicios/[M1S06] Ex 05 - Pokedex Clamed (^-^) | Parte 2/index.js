@@ -2,38 +2,38 @@
 // Com isso imprima as mesmas informações pedidas todas em tela, adicione uma lista com todas as habilidades do pokémon (observe a propriedade abilities).
 
 var botao = document.getElementById('pesquisar');
-var informacoes = document.getElementById('info');
+    botao.addEventListener('click', () => {
+    var input = document.getElementById('input').value;
 
-botao.addEventListener('click', () => {
-var input = document.getElementById('input').value.toLowerCase();
-    
-const myRequest = new XMLHttpRequest(); // Criar uma requisicao
-    
-    myRequest.onload = () => {
-        
-        var imagem = document.getElementById('imagem');
-        var lista = document.getElementById('lista');
-        
+const pokemon = new XMLHttpRequest(); // Criar uma requisicao
 
-        imagem.setAttribute("src", myRequest.response.sprites.front_default);
+pokemon.onload = () => {
+
+        console.log(pokemon.response);
+            
+        let image = document.querySelector(".pokeimage");
+        let namePokemon = document.querySelector("#pokemonname");
+        let typePokemon = document.querySelector("#pokemontype");
+        let weightPokemon = document.querySelector("#weight");
+        let abilityPokemon = document.querySelector("#ability");
         
-        informacoes.innerHTML += `<h3>${myRequest.response.name.toUpperCase()}</h3>`;
-        informacoes.innerHTML += `<p>Height: ${myRequest.response.height}</p>`;
-        informacoes.innerHTML += `<p>Weight: ${myRequest.response.weight}</p>`;
-        informacoes.innerHTML += `<br><h4>Abilities</h4><br>`;
+        image.setAttribute('src', pokemon.response.sprites.front_default);
+        namePokemon.innerHTML = pokemon.response.name;
+        typePokemon.innerHTML = pokemon.response.types[0].type.name;
+        weightPokemon.innerHTML = pokemon.response.weight;
         
-        myRequest.response.abilities.forEach(item => {
-            let ability = item.ability.name;
-            informacoes.appendChild(lista);
-            let novoItem = document.createElement('li');
-            lista.appendChild(novoItem);
-            novoItem.innerHTML += ability;
+        abilityPokemon.innerHTML = '';
+        pokemon.response.abilities.forEach(item => {
+            let tagLi = document.createElement('li');
+            tagLi.innerHTML = item.ability.name;
+            abilityPokemon.appendChild(tagLi)
         });
     }
     
-    myRequest.open("GET", `https://pokeapi.co/api/v2/pokemon/${input}`);
+    pokemon.open("GET", `https://pokeapi.co/api/v2/pokemon/${input}`);
     
-    myRequest.responseType = "json";
+    pokemon.responseType = "json";
     
-    myRequest.send();
-})
+    pokemon.send();
+});
+    
