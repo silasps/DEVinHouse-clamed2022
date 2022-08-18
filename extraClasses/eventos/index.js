@@ -13,8 +13,9 @@ formId.addEventListener('submit', (event) => {
 const firstFunction = () => {
     setTimeout(() => {
         alert('Página carregada');
-};
+});
 
 window.onload = () => {
     firstFunction();
+}
 }
