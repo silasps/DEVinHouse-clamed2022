@@ -1,7 +1,7 @@
 export default function RenderizacaoCondicional({isLoading}) {
     
     if (isLoading) {
-        return <p>Carregando...</p>
+    return <p>Carregando...</p>
     }
 
     return (
