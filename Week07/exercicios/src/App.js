@@ -3,6 +3,7 @@ import './App.css';
 import Post from './components/Post/Post'
 import Titulo from './components/Ex 03 - Componentes/Titulo';
 import BemVindo from './components/Ex 04 - Props/Props';
+import Soma from './components/Ex 05 - Props/Soma';
 
 function App() {
 const posts = [
@@ -28,8 +29,11 @@ const posts = [
   }
 ]
   return (
+    // Ex 05 - Props
+    <Soma num1={10} num2={25} />
+
     // Ex 04 - Props
-    <BemVindo nome='Silas Silva' idade={32} />
+    // <BemVindo nome='Silas Silva' idade={32} />
 
     // Ex 03 - Componetes
     // <Titulo titulo='Meu primeiro projeto React' texto='Criar um projeto React é muito fácil <3'/>
