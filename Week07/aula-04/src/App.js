@@ -21,6 +21,25 @@ function App() {
     }
   ]
 
+  const carros = [
+    {
+      chave: 'Hatch',
+      valor: 'Uno'
+    }, 
+    {
+      chave: 'Sedan',
+      valor: 'C4 Pallas'
+    }, 
+    {
+      chave: 'Sedan',
+      valor: 'Grand Siena'
+    }, 
+    {
+      chave: 'Hatch',
+      valor: 'Ka'
+    }
+  ]
+
   return (
     <div className="App">
       <RenderizacaoCondicional isLoading={false}/>
@@ -28,6 +47,8 @@ function App() {
       <Carros carros={['uno', 'C4 Pallas', 'Linea']}/> {/* Aula 04 - Slide 07 */}
 
       <CampoSelecao nomeLabel="Estados" opcoes={estados}/>
+
+      <CampoSelecao nomeLabel="Carros" opcoes={carros}/>
     </div>
   );
 }
