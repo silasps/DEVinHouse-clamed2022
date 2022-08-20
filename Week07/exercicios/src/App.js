@@ -4,6 +4,7 @@ import Post from './components/Post/Post'
 import Titulo from './components/Ex 03 - Componentes/Titulo';
 import BemVindo from './components/Ex 04 - Props/Props';
 import Soma from './components/Ex 05 - Props/Soma';
+import Botao from './components/Ex 06 - Props/Botao';
 
 function App() {
 const posts = [
@@ -30,7 +31,10 @@ const posts = [
 ]
   return (
     // Ex 05 - Props
-    <Soma num1={10} num2={25} />
+    <Botao title='Eu sou um titulo estilizado com props.' background='blue' color='white'/>
+
+    // Ex 05 - Props
+    // <Soma num1={10} num2={25} />
 
     // Ex 04 - Props
     // <BemVindo nome='Silas Silva' idade={32} />
