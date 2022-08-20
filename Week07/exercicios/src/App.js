@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Post from './components/Post/Post'
+import Post from './components/Ex 07 - Props, Fragment e PropTypes/Post'
 import Titulo from './components/Ex 03 - Componentes/Titulo';
 import BemVindo from './components/Ex 04 - Props/Props';
 import Soma from './components/Ex 05 - Props/Soma';
@@ -30,8 +30,27 @@ const posts = [
   }
 ]
   return (
-    // Ex 05 - Props
-    <Botao title='Eu sou um titulo estilizado com props.' background='blue' color='white'/>
+    // Ex 07 - Props, Fragment e PropTypes
+    <>
+    {posts.map(post=>{
+      return (
+        <Post
+        key={post.id}
+        fotoPerfil={post.fotoPerfil}
+        nomePerfil={post.nomePerfil}
+        dataPost={post.dataPost}
+        imagemPost={post.imagemPost}
+        descricaoPost={post.descricaoPost}
+        curtidoPor={post.curtidoPor}
+        qtdCurtidas={post.qtdCurtidas}
+        />)
+      })}
+
+      <Post />
+    </>
+
+    // Ex 06 - Props
+    // <Botao title='Eu sou um titulo estilizado com props.' background='blue' color='white'/>
 
     // Ex 05 - Props
     // <Soma num1={10} num2={25} />
@@ -42,24 +61,6 @@ const posts = [
     // Ex 03 - Componetes
     // <Titulo titulo='Meu primeiro projeto React' texto='Criar um projeto React é muito fácil <3'/>
 
-    // Exemplo de post dinamico
-    // <>
-    // {posts.map(post=>{
-    //   return (
-    //     <Post
-    //     key={post.id}
-    //     fotoPerfil={post.fotoPerfil}
-    //     nomePerfil={post.nomePerfil}
-    //     dataPost={post.dataPost}
-    //     imagemPost={post.imagemPost}
-    //     descricaoPost={post.descricaoPost}
-    //     curtidoPor={post.curtidoPor}
-    //     qtdCurtidas={post.qtdCurtidas}
-    //     />)
-    //   })}
-
-    //   <Post />
-    // </>
   );
 }
 
