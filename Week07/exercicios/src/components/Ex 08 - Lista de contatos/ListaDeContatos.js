@@ -10,8 +10,8 @@ export default function ListaDeContatos({ photo, name, description }) {
                 <img className='imgFile' src={photo}></img>
             </div>
             <div className='Info'>
-                <p className='p1' ><strong>{name}</strong></p>
-                <p className='p2' >{description}</p>
+                <p className='p1'><strong>{name}</strong></p>
+                <p className='p2'>{description}</p>
             </div>
         </div>
     )
