@@ -7,6 +7,7 @@ import Soma from './components/Ex 05 - Props/Soma';
 import Botao from './components/Ex 06 - Props/Botao';
 import ListaDeContatos from './components/Ex 08 - Lista de contatos/ListaDeContatos';
 import ListaDeProdutos from './components/Ex 09 - Lista de produtos/ListaDeProdutos';
+import RendCondicional from './components/Ex 10 - Renderização condicional/RendCondicional ';
 
 function App() {
   const posts = [
@@ -70,66 +71,80 @@ function App() {
       id: 1,
       photo: 'https://m.media-amazon.com/images/I/31RUD4pByJL.jpg',
       name: 'Missha All Araound Safe Block Segum Zero Sun',
-      price: '$4,00'
+      price: 4.00
     },
     {
       id: 2,
       photo: 'https://shopme365.com/image/cache/catalog/koreancosmetics/mokdon/green_tea_balancing_cream-500x500.jpg',
       name: 'Innisfree Green Tea Balancing Cream',
-      price: '$18,00'
+      price: 18.00
     },
     {
       id: 3,
       photo: 'https://m.media-amazon.com/images/I/617bfUtAUdL._AC_SX679_.jpg',
       name: "Claire's Cloud 9 Blanc De Whitening Cream",
-      price: '$20,00'
+      price: 20.00
     },
     {
       id: 4,
       photo: 'https://ae01.alicdn.com/kf/He7eaa049461a40d8af4e9c1ebd0525862/Tony-Moly-pure-eco-snail-Moisture-Gel-snail-gel.jpg',
       name: 'Tonymoly Pure Eco Snail Moisture Gel',
-      price: '$8,00'
+      price: 8.00
     },
     {
       id: 5,
       photo: 'https://skin79.net/zdjecia/2020/05/04/1003/54/SKIN79_Maska_w_Placie_Sluz_Slimaka_Fresh_Garden_Mask_Snail_23g-mini.jpg',
       name: 'Skin79 Fresh Garden Mask - Snail',
-      price: '$2,00'
+      price: 2.00
     },
     {
       id: 6,
       photo: 'https://images.tcdn.com.br/img/img_prod/776643/cosrx_advanced_snail_92_all_in_one_cream_100g_1031_1_94992849a05d4750da6f646707fe092c.jpeg',
       name: 'Cosrx Advanced Snail 92 All in One Cream',
-      price: '$24,00'
+      price: 24.00
     },
     {
       id: 7,
       photo: 'https://i.pinimg.com/originals/ac/b7/b4/acb7b4c2e5653392b430de2dbb1fa37f.jpg',
       name: 'Innisfree Canola Honey Mask',
-      price: '$14,00'
+      price: 14.00
     },
     {
       id: 8,
       photo: 'https://d1flfk77wl2xk4.cloudfront.net/Assets/63/084/L_p0050108463.jpg',
       name: 'Scinic Honey Banana Cleansing Foam',
-      price: '$4,00'
+      price: 4.00
     },
   ]
 
   return (
-    // Ex 08 - Lista de Contatos
+// Ex 09 - Renderização Condicional
     <div className='produtosMain'>
-      {produtos.map(produto =>{
-        return (
-          <ListaDeProdutos 
-            key={produto.id}
-            photo={produto.photo}
-            name={produto.name}
-            price={produto.price}
-          />
-        )
-      })}
+    {produtos.map(produto =>{
+      return (
+        <RendCondicional 
+          key={produto.id}
+          photo={produto.photo}
+          name={produto.name}
+          price={produto.price.toFixed(2)}
+        />
+      )
+    })}
     </div>
+
+    // Ex 08 - Lista de Contatos
+    // <div className='produtosMain'>
+    //   {produtos.map(produto =>{
+    //     return (
+    //       <ListaDeProdutos 
+    //         key={produto.id}
+    //         photo={produto.photo}
+    //         name={produto.name}
+    //         price={produto.price}
+    //       />
+    //     )
+    //   })}
+    // </div>
 
     // Ex 08 - Lista de Contatos
     // <>
