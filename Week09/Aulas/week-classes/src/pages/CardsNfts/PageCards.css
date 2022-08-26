@@ -1,0 +1,38 @@
+.Card {
+  gap: 10px;
+  margin: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.imagem {
+  width: 374px;
+  height: 500px;
+  border-radius: 30px;
+}
+.Name {
+  font-weight: 700;
+  font-size: 20px;
+}
+.Nickname {
+  font-weight: 400;
+  color: #232323;
+  font-size: 14px;
+}
+.Textos {
+  display: flex;
+  margin-left: 20px;
+}
+.imgCreator {
+  width: 40px;
+  height: 40px;
+}
+.Texto {
+  margin-left: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.divMaior {
+  display: flex;
+}
