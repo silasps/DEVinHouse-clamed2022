@@ -7,15 +7,21 @@ import Cards from './pages/CardsNfts/PageCards';
 import StarWars from './pages/starWars';
 import Cronometro from './pages/Cronometro/Cronometro';
 import Case2Ref from './pages/case2Ref';
+import App1 from './pages/HooksNaPratica-class/Hooks';
+import Home from './pages/homeClassBased';
+import ImprimeFrutas from './exercicios/Ex 01 - Hooks/Hooks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Cards /> */}
-    <StarWars />
+    {/* <StarWars /> */}
     {/* <Cronometro /> */}
     {/* <Case2Ref /> */}
+    {/* <App1 /> */}
+    {/* <Home /> */}
+    <ImprimeFrutas />
   </React.StrictMode>
 );
 
