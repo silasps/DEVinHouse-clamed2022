@@ -10,6 +10,7 @@ import Case2Ref from './pages/case2Ref';
 import App1 from './pages/HooksNaPratica-class/Hooks';
 import Home from './pages/homeClassBased';
 import ImprimeFrutas from './exercicios/Ex 01 - Hooks/Hooks';
+import MudancaInput from './exercicios/Ex 02 - useEffect/UseEffect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,7 +22,8 @@ root.render(
     {/* <Case2Ref /> */}
     {/* <App1 /> */}
     {/* <Home /> */}
-    <ImprimeFrutas />
+    {/* <ImprimeFrutas /> */}
+    <MudancaInput />
   </React.StrictMode>
 );
 
