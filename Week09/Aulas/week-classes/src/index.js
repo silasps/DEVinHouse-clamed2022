@@ -7,12 +7,13 @@ import reportWebVitals from './reportWebVitals';
 // import StarWars from './pages/starWars';
 // import Cronometro from './pages/Cronometro/Cronometro';
 // import Case2Ref from './pages/case2Ref';
-// import App1 from './pages/HooksNaPratica-class/Hooks';
+import HooksNaPratica from './pages/HooksNaPratica-class/HooksNaPratica';
 // import Home from './pages/homeClassBased';
 // import ImprimeFrutas from './exercicios/Ex 01 - Hooks/Hooks';
 // import MudancaInput from './exercicios/Ex 02 - useEffect/UseEffect';
 import CountClicks from './exercicios/Ex 03 - CountClicks/CountClicks';
 import ClickModifica from './exercicios/Ex 04 - ClickModifica/ClickModifica';
+import FocoNoInput from './exercicios/Ex 05 - useRef/FocoNoInput';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,12 +23,14 @@ root.render(
     {/* <StarWars /> */}
     {/* <Cronometro /> */}
     {/* <Case2Ref /> */}
-    {/* <App1 /> */}
+    {/* <HooksNaPratica /> */}
     {/* <Home /> */}
     {/* <ImprimeFrutas /> */}
     {/* <MudancaInput /> */}
     {/* <CountClicks /> */}
-    <ClickModifica />
+    {/* <ClickModifica /> */}
+    <FocoNoInput />
+    
   </React.StrictMode>
 );
 
