@@ -12,6 +12,7 @@ import reportWebVitals from './reportWebVitals';
 // import ImprimeFrutas from './exercicios/Ex 01 - Hooks/Hooks';
 // import MudancaInput from './exercicios/Ex 02 - useEffect/UseEffect';
 import CountClicks from './exercicios/Ex 03 - CountClicks/CountClicks';
+import ClickModifica from './exercicios/Ex 04 - ClickModifica/ClickModifica';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,7 +26,8 @@ root.render(
     {/* <Home /> */}
     {/* <ImprimeFrutas /> */}
     {/* <MudancaInput /> */}
-    <CountClicks />
+    {/* <CountClicks /> */}
+    <ClickModifica />
   </React.StrictMode>
 );
 
