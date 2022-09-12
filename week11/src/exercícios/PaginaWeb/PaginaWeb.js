@@ -1,18 +1,17 @@
 import React from "react";
+import Content from "./Content";
 import Footer from "./Footer";
 import Header from "./Header";
 
 export default function PaginaWeb() {
+
   return (
-    <div>
+    <>
       <Header />
-      <h1>Conteúdo da Página</h1>
-      <h2>Content Title</h2>
-      <p>Content</p>
-      <p>Content</p>
-      <p>Content</p>
-      <p>Content</p>
+
+      <Content />
+
       <Footer />
-    </div>
+    </>
   );
 }
