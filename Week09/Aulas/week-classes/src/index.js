@@ -11,9 +11,10 @@ import HooksNaPratica from './pages/HooksNaPratica-class/HooksNaPratica';
 // import Home from './pages/homeClassBased';
 // import ImprimeFrutas from './exercicios/Ex 01 - Hooks/Hooks';
 // import MudancaInput from './exercicios/Ex 02 - useEffect/UseEffect';
-import CountClicks from './exercicios/Ex 03 - CountClicks/CountClicks';
-import ClickModifica from './exercicios/Ex 04 - ClickModifica/ClickModifica';
-import FocoNoInput from './exercicios/Ex 05 - useRef/FocoNoInput';
+// import CountClicks from './exercicios/Ex 03 - CountClicks/CountClicks';
+// import ClickModifica from './exercicios/Ex 04 - ClickModifica/ClickModifica';
+// import FocoNoInput from './exercicios/Ex 05 - useRef/FocoNoInput';
+import TelaMsg from './exercicios/Ex 06 - TelaMsg/TelaMsg';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,7 +30,8 @@ root.render(
     {/* <MudancaInput /> */}
     {/* <CountClicks /> */}
     {/* <ClickModifica /> */}
-    <FocoNoInput />
+    {/* <FocoNoInput /> */}
+    <TelaMsg />
     
   </React.StrictMode>
 );
