@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes, Navigate  } from 'react-router-dom'
-import PaginaWeb from '../../exercícios/Ex 01 - Hd/PaginaWeb';
+import PaginaWeb from '../../exercícios/PaginaWeb/PaginaWeb';
 import Home from '../Formularios/Home';
 import Login from '../Formularios/Login';
 import NotFound from '../Formularios/NotFound';

@@ -7,6 +7,11 @@ export default function PaginaWeb() {
     <div>
       <Header />
       <h1>Conteúdo da Página</h1>
+      <h2>Content Title</h2>
+      <p>Content</p>
+      <p>Content</p>
+      <p>Content</p>
+      <p>Content</p>
       <Footer />
     </div>
   );
