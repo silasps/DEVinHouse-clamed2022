@@ -1,8 +1,10 @@
+import "../components/Frase.css"
+
 function Frase() {
     
     return (
-        <div>
-            <p>Esta e a primera aplicacao que eu estou desenvolvendo com REACT.</p>
+        <div className="fraseContainer">
+            <p className="fraseContent">Esta e a primera aplicacao que eu estou desenvolvendo com REACT.</p>
         </div>
     )
 }
