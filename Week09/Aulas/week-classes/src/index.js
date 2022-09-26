@@ -15,6 +15,7 @@ import HooksNaPratica from './pages/HooksNaPratica-class/HooksNaPratica';
 // import ClickModifica from './exercicios/Ex 04 - ClickModifica/ClickModifica';
 // import FocoNoInput from './exercicios/Ex 05 - useRef/FocoNoInput';
 import TelaMsg from './exercicios/Ex 06 - TelaMsg/TelaMsg';
+import BarraProgresso from './exercicios/Ex 07 - Barra progresso/BarraProgresso'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,7 +32,8 @@ root.render(
     {/* <CountClicks /> */}
     {/* <ClickModifica /> */}
     {/* <FocoNoInput /> */}
-    <TelaMsg />
+    {/* <TelaMsg /> */}
+    <BarraProgresso />
     
   </React.StrictMode>
 );
